@@ -1,3 +1,6 @@
+
+
+
 # Meu Repositório de Tecnologia e Cybersecurity
 
 Bem-vindo ao meu repositório! Aqui você encontrará diversos recursos e tutoriais sobre serviços de tecnologia, segurança cibernética, e administração de sistemas Linux e Windows. Este repositório inclui documentação detalhada e exemplos práticos para instalação e configuração de diversos serviços e ferramentas.
@@ -43,3 +46,21 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 # deploy-step-by-step
 Meus roteiros de instalação 
+
+# Servidor OpenVPN em Container Docker
+
+## Introdução
+Este repositório fornece um guia completo para configurar um servidor OpenVPN seguro e escalável utilizando containers Docker.
+
+## Pré-requisitos
+* Docker instalado e em funcionamento
+* Um domínio (opcional, para configurar o DNS)
+* Conhecimento básico de linha de comando e Docker
+
+## Arquitetura
+**[Diagrama mostrando a arquitetura: Docker, OpenVPN, cliente]**
+
+## Instalação
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/seu_usuario/seu_repositorio.git](https://github.com/seu_usuario/seu_repositorio.git)
