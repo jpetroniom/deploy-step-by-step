@@ -59,6 +59,17 @@ Este repositório fornece um guia completo para configurar um servidor OpenVPN s
 
 ## Arquitetura
 **[Diagrama mostrando a arquitetura: Docker, OpenVPN, cliente]**
+@startuml
+component "Container Docker" as docker
+component "Servidor OpenVPN" as openvpn
+component "Cliente" as client
+component "Rede Privada" as private_network
+
+docker -- VPN --> openvpn
+docker -- UI --> client
+openvpn -- VPN --> private_network
+
+@enduml
 
 ## Instalação
 1. **Clone o repositório:**
