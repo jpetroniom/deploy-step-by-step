@@ -50,7 +50,7 @@ Meus roteiros de instalação
 # Servidor OpenVPN em Container Docker
 
 ## Introdução
-Este repositório fornece um guia completo para configurar um servidor OpenVPN seguro e escalável utilizando containers Docker.
+Meu repositório para configurar S.O. Linux e aplicativos on linux Ubuntu.
 
 ## Pré-requisitos
 * Docker instalado e em funcionamento
@@ -59,7 +59,6 @@ Este repositório fornece um guia completo para configurar um servidor OpenVPN s
 
 ## Arquitetura
 **[Diagrama mostrando a arquitetura: Docker, OpenVPN, cliente]**
-@startuml
 component "Container Docker" as docker
 component "Servidor OpenVPN" as openvpn
 component "Cliente" as client
@@ -69,9 +68,27 @@ docker -- VPN --> openvpn
 docker -- UI --> client
 openvpn -- VPN --> private_network
 
-@enduml
+1. **Instalando o Docker:** 
 
-## Instalação
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/seu_usuario/seu_repositorio.git](https://github.com/seu_usuario/seu_repositorio.git)
+  # Add Docker's official GPG key - Install Docker:
+   01  sudo su  
+   02  apt update
+   02  apt install ca-certificates curl
+   03  install -m 0755 -d /etc/apt/keyrings
+   04  curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   05  chmod a+r /etc/apt/keyrings/docker.asc
+   06  apt update
+   07  apt upgrade
+   08  apt install tzdata
+   09  dpkg-reconfigure tzdata
+   10  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+   11  apt update
+   12  apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   13  groupadd docker
+   14  usermod -aG docker $USER
+
+
+2. **Instalando Openvpn-as:**
+     
+   # Add the repository to Apt sources:
+   
