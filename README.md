@@ -47,7 +47,7 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 # deploy-step-by-step
 Meus roteiros de instalação 
 
-# Servidor OpenVPN em Container Docker
+# Servidor OpenVPN-AS em Container Docker
 
 ## Introdução
 Meu repositório para configurar S.O. Linux e aplicativos on linux Ubuntu.
